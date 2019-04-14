@@ -28,6 +28,12 @@ suppose your `config.json` location is `/opt/v2ray/config.json`, and the inbound
 - `cd /opt/v2ray`
 - `docker run --name v2 -v $PWD:/etc/v2ray -d -p 1080:1080 monius/v2ray:client`
 
+### Specific version
+
+By add environment variable `VER` , for example `3.0` with `-e VER=3.0`.
+
+- `docker run --name v2 -v $PWD:/etc/v2ray -e VER=3.0 -d -p 1080:1080 monius/v2ray:client`
+
 ## Tags
 
 - monius/v2ray:client (Test passed)
