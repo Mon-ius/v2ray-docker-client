@@ -16,14 +16,14 @@ You need to prepare your `config.json` file yourself. Make sure `listen: 0.0.0.0
 
 ### Windows
 
-suppose your `config.json` location is `D:\Downloads\v2ray\config.json`, and the inbound port is `1080`.
+Suppose your `config.json` location is `D:\Downloads\v2ray\config.json`, and the inbound port is `1080`.
 
 - `cd D:\Downloads\v2ray`
 - `docker run --name v2 -v %CD%:/etc/v2ray -d -p 1080:1080 monius/v2ray:client`
 
 ### Linux/Unix/MacOS
 
-suppose your `config.json` location is `/opt/v2ray/config.json`, and the inbound port is `1080`.
+Suppose your `config.json` location is `/opt/v2ray/config.json`, and the inbound port is `1080`.
 
 - `cd /opt/v2ray`
 - `docker run --name v2 -v $PWD:/etc/v2ray -d -p 1080:1080 monius/v2ray:client`
