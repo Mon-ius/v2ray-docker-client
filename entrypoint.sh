@@ -2,7 +2,7 @@ cd /v2ray
 
 # Version set
 if [ -z "$VER" ]; then
-    export VER="$(wget -O- 'https://github.com/v2ray/v2ray-core/releases' | grep title=\"v | grep \"\> |  awk '/[^[:graph:]]title=/{print $NF}'  | awk '{split($0,a,"\""); print a[2]}' | awk 'NR==1{print $1}' | awk '{split($0,a,"v"); print a[2]}')";
+    export VER="$(wget -O- 'https://github.com/v2ray/v2ray-core/releases/latest' | grep title=\"v | grep \"\> |  awk '/[^[:graph:]]title=/{print $NF}'  | awk '{split($0,a,"\""); print a[2]}' | awk 'NR==1{print $1}' | awk '{split($0,a,"v"); print a[2]}')";
     echo "Version not provided, using latest version: $VER";
 else
     echo "Version provided, using $VER as current version";
