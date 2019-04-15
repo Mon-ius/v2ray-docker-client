@@ -17,6 +17,5 @@ if [ ! -f "v2ray" ]; then
   mv /v2ray/v2ray-v$VER-linux-64/geosite.dat .
 fi
 
-cp -f /config.json .
 chmod +x v2ray v2ctl
 ./v2ray -config=/etc/v2ray/config.json
